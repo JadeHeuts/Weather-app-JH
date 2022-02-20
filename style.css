@@ -22,6 +22,22 @@ li {
   line-height: 1;
   list-style: none;
 }
+small {
+  color: rgb(135, 135, 135);
+  text-align: center;
+  font-size: 80%;
+  font-weight: 400;
+  display: block;
+  height: auto;
+  text-size-adjust: 100%;
+  width: auto;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
 
 .weather-app {
   border: 1px solid #dadde1;

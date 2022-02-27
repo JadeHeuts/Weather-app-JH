@@ -28,51 +28,62 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                autofocus="on"
-                autocomplete="off"
-                placeholder="Type a city..."
-                class="form-control"
-                id="city-input"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary"
-              />
-            </div>
-          </div>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="descripton"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix">
-              <span class="temperature" id="temperature"> </span>
-              <span class="units"> °C </span>
-            </div>
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <form class="search-form" id="search-form">
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    autofocus="on"
+                    autocomplete="off"
+                    placeholder="Type a city..."
+                    class="form-control"
+                    id="city-input"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary"
+                  />
+                </div>
+              </div>
+            </form>
+            <h1 id="city"></h1>
             <ul>
-              <li>
-                Humidity:
-                <span id="humidity"> % </span>
-              </li>
-              <li>
-                Wind:
-                <span id="wind"> km/h </span>
-              </li>
+              <li id="date"></li>
+              <li id="descripton"></li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  alt="Clear"
+                  class="float-left"
+                />
+                <span class="temperature" id="temperature"> </span>
+                <span class="units">
+                  °C | <a href="#" class="href">°F </a>
+                </span>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>
+                  Humidity:
+                  <span id="humidity"> % </span>
+                </li>
+                <li>
+                  Wind:
+                  <span id="wind"> km/h </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
